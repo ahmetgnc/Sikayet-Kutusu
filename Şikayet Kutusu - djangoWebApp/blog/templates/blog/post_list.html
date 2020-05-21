@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://img.icons8.com/ios-glyphs/30/000000/no-gluten.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+    body, html {
+      height: 100%;
+    }
+
+    .bg {
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
+
+</head>
+<body>
+<div class="bg">
+    <center>
+        <center>
+            <section class="form-dark mb-5">
+
+                <!--Form without header-->
+                <div class="card card-image"
+                     style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(7).jpg');width:20%; margin-top:20px;">
+                    <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+
+                        <!--Header-->
+                        <div class="text-center">
+                            <h3 class="white-text mb-5 mt-4 font-weight-bold text-uppercase"><strong>Şikayet</strong> <a
+                                    class="green-text font-weight-bold"><strong>
+                                Kutusu</strong></a></h3>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" id="form100" class="form-control" , placeholder="Adınız Soyadınız">
+                        </div>
+
+                        <div class="md-form">
+
+                            <input type="text" id="form101" class="form-control" , placeholder="Email adresi", style="margin-top:20px;">
+                        </div>
+
+                        <form action="success" method="post">
+                           {% csrf_token %}
+                           <input type="text" class="form-control" id="compliant_text" placeholder="Şikayetinizi yazınız" value=""
+                                  name='compliant_text', style="margin-top:20px;">
+                           <input type="submit" value="Submit", style="margin-top:20px;">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </center>
+    </center>
+</div>
+
+
+</body>
+
+
+</html>
+
+
